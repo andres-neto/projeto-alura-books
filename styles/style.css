@@ -12,3 +12,15 @@
     --gradiente-fim: #326589;
     --gradiente-direcao: to bottom right;
 }
+
+header {
+    background-color: var(--fundo-titulo);
+}
+
+main {
+    background-color: var(--fundo-carrossel);
+}
+
+footer {
+    background-color: var(--fundo-rodape);
+}

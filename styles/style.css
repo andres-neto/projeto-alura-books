@@ -1,0 +1,14 @@
+:root {
+    --fundo-carrossel: #EBECEE;
+    --fundo-titulo: #FFFFFF;
+    --fundo-bolinha-seletora: #C4C4C4;
+    --cor-destaque: #EB9B00;
+    --azul-texto: #002F52;
+    --preto-texto: #000000;
+    --preto-transparente: rgba(0, 0, 0, 0.85);
+    --borda-rodape: #858585;
+    --fundo-rodape: #F9F9F9;
+    --gradiente-inicio: #002F52;
+    --gradiente-fim: #326589;
+    --gradiente-direcao: to bottom right;
+}

@@ -13,6 +13,11 @@
     --gradiente-direcao: to bottom right;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     background-color: var(--fundo-titulo);
 }

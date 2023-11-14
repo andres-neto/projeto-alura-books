@@ -1,4 +1,5 @@
 @import url(header.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 :root {
     --fundo-carrossel: #EBECEE;
@@ -10,9 +11,9 @@
     --preto-transparente: rgba(0, 0, 0, 0.85);
     --borda-rodape: #858585;
     --fundo-rodape: #F9F9F9;
-    --gradiente-inicio: #002F52;
-    --gradiente-fim: #326589;
-    --gradiente-direcao: to bottom right;
+    --gradiente-azul: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+
+    --fonte-padrao: 'Poppins', sans-serif;
 }
 
 main {

@@ -3,6 +3,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    font-family: var(--fonte-padrao);
+    font-size: 1rem;
+    padding: 1.1rem 1.5rem;
 }
 
     .cabeçalho__menu-hamburguer {
@@ -14,18 +18,58 @@
         display: inline-block;
     }
     
-.container {
-    display: flex;
-    align-items: center;
-}
-.esquerdo {
-    gap: 24px;
-}
-.direito {
-    gap: 8px;
-}
-
-    .container__imagem {
-        padding: 0.5rem;
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .esquerdo {
+        gap: 24px;
+    }
+    .direito {
+        gap: 8px;
     }
 
+        .container__botao {
+            display: none;
+        }    
+        /* se estiver checked, então personalize a classe seguinte */
+        .container__botao:checked ~ .lista-menu {
+            display: block;            
+        }
+        /*.container__botao:checked ~ .lista-menu__titulo{
+            background: var(--gradiente-azul);       
+            background-image: url("../assets/Menu\ Aberto.svg");
+            color: red;
+        }*/
+
+        .container__imagem {
+            padding: 0.5rem;
+        }
+
+    .lista-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 30%;
+        width: 70vw;
+        background-color: var(--fundo-cabeçalho);        
+    }
+
+        .lista-menu__titulo {
+            padding: 1.5rem;
+            color: var(--cor-destaque);            
+            font-weight: 700;
+        }
+
+        .lista-menu__item {
+            padding: 1rem 1.5rem;
+            font-weight: 400;
+        }        
+        .lista-menu__link {
+            text-decoration: none;
+            background: var(--gradiente-azul);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+        }

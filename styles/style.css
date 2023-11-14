@@ -1,6 +1,8 @@
+@import url(header.css);
+
 :root {
     --fundo-carrossel: #EBECEE;
-    --fundo-titulo: #FFFFFF;
+    --fundo-cabeçalho: #FFFFFF;
     --fundo-bolinha-seletora: #C4C4C4;
     --cor-destaque: #EB9B00;
     --azul-texto: #002F52;
@@ -11,10 +13,6 @@
     --gradiente-inicio: #002F52;
     --gradiente-fim: #326589;
     --gradiente-direcao: to bottom right;
-}
-
-header {
-    background-color: var(--fundo-titulo);
 }
 
 main {

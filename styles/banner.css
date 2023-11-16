@@ -3,7 +3,6 @@
     color: var(--branco-principal);
     font-family: var(--fonte-padrao);
     font-size: 1rem;
-    font-weight: 400;
     text-align: center;
     padding: 2rem 1.5rem;
 }
@@ -15,8 +14,34 @@
 
     .banner__texto {
         font-weight: 500;
+        padding: 0.5rem 2rem 1.5rem;
+        line-height: normal;
     }
 
     .banner__busca {
+        background-color: transparent;
+        color: var(--branco-principal);
+        border: 1px solid var(--branco-principal);
+        border-radius: 1.5rem;        
+        width: 100%;
+        padding: 0.6rem 1.5rem;
         font-size: 0.9rem;
+        font-weight: 400;
+    }
+    .banner__busca::placeholder {
+        font-family: var(--fonte-padrao);
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: var(--branco-principal);
+        text-align: center;
+        padding-left: 2rem;
+        background: url("../assets/Lupa.svg");
+        /* background-origin: border-box;
+        background-size: 18px 18px; */
+        background-position: 2.1rem;
+        background-repeat: no-repeat;
+    }
+    .banner__busca::-webkit-search-cancel-button {       
+        /* filter: invert(1); */
+        filter: brightness(10);
     }

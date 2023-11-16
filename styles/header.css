@@ -1,5 +1,5 @@
 .cabeçalho {
-    background-color: var(--fundo-cabeçalho);
+    background-color: var(--branco-principal);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +52,7 @@
         top: 100%;
         right: 30%;
         width: 70vw;
-        background-color: var(--fundo-cabeçalho);        
+        background-color: var(--branco-principal);        
     }
 
         .lista-menu__titulo {
@@ -67,9 +67,9 @@
         }        
         .lista-menu__link {
             text-decoration: none;
-            background: var(--gradiente-azul);
-            background-clip: text;
+            background: var(--gradiente-azul);            
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             text-transform: uppercase;
         }

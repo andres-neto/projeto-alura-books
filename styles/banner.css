@@ -1,0 +1,22 @@
+.banner {
+    background: var(--gradiente-azul);
+    color: var(--branco-principal);
+    font-family: var(--fonte-padrao);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+
+    .banner__titulo {
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    .banner__texto {
+        font-weight: 500;
+    }
+
+    .banner__busca {
+        font-size: 0.9rem;
+    }

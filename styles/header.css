@@ -6,70 +6,84 @@
     position: relative;
     font-family: var(--fonte-padrao);
     font-size: 1rem;
-    padding: 1.1rem 1.5rem;
+    /* padding: 1.1rem 1.5rem; */
+    /* padding: 1.1rem 1.5rem 1.1rem 0; */
 }
 
-    .cabeçalho__menu-hamburguer {
-        width: 36px;
-        height: 24px;
-        background-image: url("../assets/Menu.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        display: inline-block;
-    }
-    
     .container {
         display: flex;
         align-items: center;
+        /* padding: 1.1rem 1.5rem 1.1rem 0; */
     }
     .esquerdo {
-        gap: 24px;
-    }
-    .direito {
         gap: 8px;
     }
-
         .container__botao {
             display: none;
-        }    
-        /* se estiver checked, então personalize a classe seguinte */
-        .container__botao:checked ~ .lista-menu {
+        }            
+        .container__botao:checked ~ .lista-menu { /* se estiver checked, então personalize a classe seguinte */
             display: block;            
         }
-        /*.container__botao:checked ~ .lista-menu__titulo{
-            background: var(--gradiente-azul);       
-            background-image: url("../assets/Menu\ Aberto.svg");
-            color: red;
-        }*/
-
-        .container__imagem {
-            padding: 0.5rem;
+        .container__botao:checked ~ .container__rotulo {
+            background: var(--gradiente-azul);                        
         }
+        /* .container__botao:checked ~ .cabeçalho__menu-hamburguer {
+            background-image: url("../assets/Menu\ Aberto.svg");  
+        }         */
 
-    .lista-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        right: 30%;
-        width: 70vw;
-        background-color: var(--branco-principal);        
+        .container__rotulo {
+            height: 24px;
+            padding: 28px 22px;
+        }
+            .cabeçalho__menu-hamburguer {
+                width: 36px;
+                height: 24px;
+                background-image: url("../assets/Menu.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                display: inline-block;
+            }
+
+        .lista-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 30%;
+            width: 70vw;
+            background-color: var(--branco-principal);        
+        }   
+
+            .lista-menu__titulo {
+                padding: 1.5rem;
+                color: var(--cor-destaque);            
+                font-weight: 700;
+            }
+    
+            .lista-menu__item {
+                padding: 1rem 1.5rem;
+                font-weight: 400;
+            }        
+            .lista-menu__item:hover {
+                background: var(--gradiente-azul);
+            }
+            .lista-menu__item:hover > .lista-menu__link {
+                -webkit-text-fill-color: var(--branco-principal);
+                text-decoration: none;
+            }    
+                .lista-menu__link {
+                    text-decoration: none;
+                    background: var(--gradiente-azul);            
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-transform: uppercase;
+                }
+
+    .direito {
+        gap: 8px;
+        padding: 1.5rem 1.5rem 1.5rem 0;
     }
-
-        .lista-menu__titulo {
-            padding: 1.5rem;
-            color: var(--cor-destaque);            
-            font-weight: 700;
-        }
-
-        .lista-menu__item {
-            padding: 1rem 1.5rem;
-            font-weight: 400;
-        }        
-        .lista-menu__link {
-            text-decoration: none;
-            background: var(--gradiente-azul);            
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-transform: uppercase;
-        }
+        .container__imagem {
+            height: 32px;
+            padding: 0 0.5rem;
+        }    

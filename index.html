@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraBooks</title>
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <header class="cabeçalho">
         <div class="container esquerdo">
             <input class="container__botao" type="checkbox" id="menu" title="Categorias do site">
-            <label class="container__rotulo" for="menu">                
+            <label class="container__rotulo" for="menu">
                 <span class="cabeçalho__menu-hamburguer"></span>
             </label>
             <ul class="lista-menu">
@@ -44,13 +47,63 @@
     <main>
         <section class="banner">
             <h2 class="banner__titulo">Já sabe por onde começar?</h2>
-            <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>       
+            <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
             <input class="banner__busca" type="search" placeholder="Qual será sua próxima leitura?" id="pesquisa">
+        </section>
+
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Últimos lançamentos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/ApacheKafka.svg"
+                            alt="Livro de apache kafka e spring boot da alurabooks"></div>
+                    <div class="swiper-slide"><img src="assets/Liderança.svg"
+                            alt="Livro de liderança em design da alurabooks"></div>
+                    <div class="swiper-slide"><img src="assets/Javascript.svg"
+                            alt="Livro de javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="assets/Guia Front-end.svg"
+                            alt="Livro guia front end da alurabooks"></div>
+                    <div class="swiper-slide"><img src="assets/Portugol.svg" alt="Livro de portugol da alurabooks">
+                    </div>
+                    <div class="swiper-slide"><img src="assets/Acessibilidade.svg"
+                            alt="Livro sobre acessibilidade no desenvolvimento web da alurabooks"></div>
+                </div>
+
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+
+            </div>
         </section>
     </main>
 
     <footer>
         <h3>Grupo Alura</h3>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 20,
+            slidesPerView: 2.2,
+            loop: true,
+            centeredSlides: true,
+            initialSlide: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }
+        });
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,41 @@
+.carrossel__titulo {
+    color: var(--cor-destaque);
+    background-color: var(--branco-principal);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1rem;
+    font-family: var(--fonte-padrao);
+    line-height: normal;
+    padding: 1.25rem 0 0.5rem 0;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.25rem 0 1rem;
+}
+.swiper-pagination-bullet {
+    background: var(--gradiente-azul);
+}
+
+.swiper {
+    height: 286px;
+}
+
+.swiper-wrapper {
+    height: 250px;
+}
+
+.swiper-slide {
+    width: 250px;
+}
+
+.swiper-slide img {
+    width: 180px;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.swiper-button-prev, .swiper-button-next, .swiper-scrollbar {
+    display: none;
+}

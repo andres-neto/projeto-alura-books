@@ -16,6 +16,7 @@
     --gradiente-azul: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
 
     --fonte-padrao: 'Poppins', sans-serif;
+    font-family: var(--fonte-padrao);
 }
 
 main {

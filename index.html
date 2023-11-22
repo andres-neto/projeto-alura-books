@@ -51,7 +51,7 @@
             <input class="banner__busca" type="search" placeholder="Qual será sua próxima leitura?" id="pesquisa">
         </section>
 
-        <section class="carrossel">
+        <section class="carrossel-um">
             <h2 class="carrossel__titulo">Últimos lançamentos</h2>
             <!-- Slider main container -->
             <div class="swiper">
@@ -68,33 +68,30 @@
                             alt="Livro de javascript assertivo da alurabooks"></div>
                     <div class="swiper-slide"><img src="assets/Guia Front-end.svg"
                             alt="Livro guia front end da alurabooks"></div>
-                    <div class="swiper-slide"><img src="assets/Portugol.svg" alt="Livro de portugol da alurabooks">
-                    </div>
+                    <div class="swiper-slide"><img src="assets/Portugol.svg" 
+                            alt="Livro de portugol da alurabooks"></div>
                     <div class="swiper-slide"><img src="assets/Acessibilidade.svg"
                             alt="Livro sobre acessibilidade no desenvolvimento web da alurabooks"></div>
                 </div>
 
-
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-
                 <!-- If we need scrollbar -->
                 <div class="swiper-scrollbar"></div>
-
             </div>
 
             <div class="card">
                 <!-- 1º linha -->
-                <div class="card__descricao">
+                <div class="card__conteudo">
                     <!-- 1º coluna -->
-                    <div class="descricao">
-                        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
-                        <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
-                        <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    <div class="conteudo">
+                        <h3 class="conteudo__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="conteudo__titulo-livro">Angular 11 e Firebase</h2>
+                        <p class="conteudo__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
                     </div>
                     <!-- 2º coluna -->
-                    <img class="descricao__imagem" src="assets/Angular.svg" alt="Logo do Angular">
+                    <img class="conteudo__imagem" src="assets/Angular.svg" alt="Logo do Angular">
                 </div>
                 <!-- 2º linha -->
                 <div class="card__botoes">
@@ -104,6 +101,50 @@
                         <li class="botoes__item"><img src="assets/Compras.svg" alt="Adicionar ao carrinho de compras"></li>
                     </ul>
                     <!-- 2º coluna -->
+                    <a class="botoes__ancora" href="#">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="carrossel-dois">
+            <h2 class="carrossel__titulo">Mais vendidos</h2>
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/Javascript.svg"
+                            alt="Livro de javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="assets/ApacheKafka.svg"
+                            alt="Livro de apache kafka e spring boot da alurabooks"></div>
+                    <div class="swiper-slide"><img src="assets/Liderança.svg"
+                            alt="Livro de liderança em design da alurabooks"></div>
+                    <div class="swiper-slide"><img src="assets/Guia Front-end.svg"
+                            alt="Livro guia front end da alurabooks"></div>
+                    <div class="swiper-slide"><img src="assets/Portugol.svg" 
+                            alt="Livro de portugol da alurabooks"></div>
+                    <div class="swiper-slide"><img src="assets/Acessibilidade.svg"
+                            alt="Livro sobre acessibilidade no desenvolvimento web da alurabooks"></div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <div class="card">
+                <div class="card__conteudo">
+                    <div class="conteudo">
+                        <img class="conteudo__avaliacao" src="assets/Estrelinhas.svg" alt="5 estrelas de avaliação do autor(a)">
+                        <h3 class="conteudo__titulo">Autora do Mês</h3>
+                        <h2 class="conteudo__titulo-livro">Juliana Agarikov</h2>
+                        <p class="conteudo__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                    </div>
+                    <img class="conteudo__imagem" src="assets/Escritora.svg" alt="Foto da escritora Juliana Agarikov">
+                </div>
+                <div class="card__botoes">
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="assets/Favoritos.svg" alt="Favoritar autor(a)"></li>
+                        <li class="botoes__item"><img src="assets/Compras.svg" alt="Adicionar livros do autor(a) ao carrinho de compras"></li>
+                    </ul>
                     <a class="botoes__ancora" href="#">Saiba mais</a>
                 </div>
             </div>

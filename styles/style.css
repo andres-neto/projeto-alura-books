@@ -4,6 +4,7 @@
 @import url(carrossel.css);
 @import url(topicos.css);
 @import url(contato.css);
+@import url(rodape.css);
 
 
 :root {
@@ -24,9 +25,4 @@
 
 main {
     background-color: var(--fundo-carrossel);
-}
-        
-footer {
-    background-color: var(--fundo-rodape);
-    border-top: 1px solid var(--borda-rodape);
 }

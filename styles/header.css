@@ -87,3 +87,7 @@
             height: 32px;
             padding: 0 0.5rem;
         }    
+
+@media screen and (min-width: 1024px) {
+    
+}

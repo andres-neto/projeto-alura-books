@@ -1,0 +1,70 @@
+.contato {
+    background-color: var(--branco-principal);
+    text-align: justify;
+    padding: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+    .contato__titulo, .contato__texto {
+        background: var(--gradiente-azul);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        line-height: normal;
+    }
+    .contato__titulo {        
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .contato__texto {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 0.5rem 0 1.5rem;
+    }
+    
+    .contato__email {
+        position: relative;
+    }    
+        .email__input {
+            padding: 0.6rem 1.5rem;
+            width: 100%;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: normal;
+            box-sizing: border-box;       
+            border-radius: 1.5rem;
+            background-image: var(--gradiente-azul);
+            background-origin: border-box;
+            box-shadow: inset 0 100vw var(--branco-principal);
+            border: 1px solid transparent;
+        }
+        .email__input::placeholder {
+            padding-left: 2rem;
+            font-family: var(--fonte-padrao);
+            background: var(--gradiente-azul);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .email__input:focus ~ .email__icone {
+            display: none;
+        }
+        .email__input:placeholder-shown + .email__icone {
+            display: flex;
+        }
+
+        .email__icone {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            height: 1.5rem;
+            width: 1.5rem;
+            position: absolute;
+            left: 1.5rem;
+            top: 0.5rem;
+        }
+            .email__icone img {
+                height: 16px;
+                width: 20px;
+                margin: 0;
+                padding: 0;
+            }

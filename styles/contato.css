@@ -68,3 +68,23 @@
                 margin: 0;
                 padding: 0;
             }
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+    }
+        .contato__descricao {
+            margin-right: 1rem;
+            width: 33%;
+        }
+            .contato__titulo {
+                font-size: 1.5rem;
+            }
+
+            .contato__email {
+                width: 30%;
+            }
+}

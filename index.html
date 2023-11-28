@@ -38,8 +38,36 @@
             <img src="assets/Logo.svg" alt="Logo da AluraBooks">
             <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
         </div>
+
+        <ul class="opcoes">
+            <input class="opcoes__botao" type="checkbox" id="opcoes-menu">
+            <label for="opcoes-menu">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Design & ux</a>
+                </li>
+            </ul>
+            <li class="opcoes__item"><a class="opcoes__link" href="#">Favoritos</a></li>
+            <li class="opcoes__item"><a class="opcoes__link" href="#">Minha Estante</a></li>
+        </ul>
+
         <div class="container direito">
-            <a class="container__imagem" href="#"><img src="assets/Favoritos.svg" alt="Meus favoritos"></a>
+            <a class="container__imagem container__imagem-transparente" href="#"><img src="assets/Favoritos.svg" alt="Meus favoritos"></a>
             <a class="container__imagem" href="#"><img src="assets/Compras.svg" alt="Carrinho de compras"></a>
             <a class="container__imagem" href="#"><img src="assets/Usuario.svg" alt="Meu perfil"></a>
         </div>
@@ -193,7 +221,7 @@
                 <span class="email__icone"><img src="assets/Email.svg" alt="Ícone de email"></span>
             </div>
         </section>
-    </main> 
+    </main>
 
     <footer class="rodape">
         <hr />
@@ -214,6 +242,25 @@
             }
         });
     </script>
+
+    <!-- possibilidade de configurar carrosseis para diferentes tamanhos de tela -->
+    <!-- <div class="swiper-container small-screen" style="display: none;">
+    </div>
+
+    <div class="swiper-container large-screen" style="display: none;">
+    </div>
+    @media (max-width: 428px) {
+        .swiper-container.small-screen {
+            display: block;
+        }
+    }
+    
+    @media (min-width: 429px) {
+        .swiper-container.large-screen {
+            display: block;
+        }
+    } -->
+
 </body>
 
 </html>
